@@ -46,4 +46,4 @@ This ONLY works if you haven't modify the code in PrintPracticeTester.java or ch
 
 ## Think you found a bug or a typo?
 
-Please send me an email explainig where you believe you have found either a type or a bug in the program. You can email me at daniel.tutors12@gmail.com. Try your best to explain the bug/typo to me and provide screenshots of the code/output if you can.
+Please send me an email explaining where you believe you have found either a typo or a bug in the program. You can email me at daniel.tutors12@gmail.com. Try your best to explain the bug/typo to me and provide screenshots of the code/output if you can.
