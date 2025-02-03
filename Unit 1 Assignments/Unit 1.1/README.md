@@ -11,6 +11,8 @@ This assignment is suppose to give you some hands-on practice using printlns in 
 
 One of my expectations that I have is that you will look up information that you don't know yet. For example, we haven't talked about escape sequences, yet this assignment has you using them. This was done on purpose. Take the time to do your own research on them and do some experimenting.
 
+**Be very caution to use AI. It is a powerful tool, but it can lead to blindly copying and pasting directly into code. I ask that if you use AI, to prompt it with questions, not commands.**
+
 ## Install instructions
 
 TODO: Write the instructions to install this folder
