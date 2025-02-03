@@ -1,0 +1,12 @@
+5
+3.14
+false
+First output
+71
+22.61
+true
+Second output
+2147483647
+1.7976931348623157E308
+false
+First outputSecond output
