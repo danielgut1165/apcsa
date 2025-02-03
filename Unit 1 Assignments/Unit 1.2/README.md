@@ -2,17 +2,17 @@
 
 ## Introduction
 
-This assignment is suppose to give you some hands-on practice using creating/modifying in Java. Before starting this assignment you should be familiar with the following topics:
-- Purpose of variables in computer science 
+This assignment is supposed to give you some hands-on practice using creating/modifying in Java. Before starting this assignment you should be familiar with the following topics:
+- Purpose of variables in computer science
 - CamelCase Style
 - Different Primitive and Reference types
 - How to create/modify variables
 
-One of my expectations that I have is that you will look up information that you don't know yet. Some assignments include information that you haven't learned yet. This was done on purpose. Take the time to do your own research on them and do some experimenting.
+One of my expectations that I have is that you will look up information that you don't know yet. Some assignments include information that you haven't learned yet. This was done on purpose. Take the time to do your research on them and experiment with them.
 
-**Be very caution to use AI. It is a powerful tool, but it can lead to blindly copying and pasting directly into code. I ask that if you use AI, to prompt it with questions, not commands.**
+**Be very cautious about using AI. It is a powerful tool, but it can lead to blindly copying and pasting directly into code. I ask that if you use AI, prompt it with questions, not commands.**
 
-## Install instructions
+## Install Instructions
 
 TODO: Write the instructions to install this folder
 
@@ -33,7 +33,7 @@ In between the comment and the System.out.printlns, create 4 variables (1 intege
 
 In the second secton, modify the original 4 variables to hold 71, the new value of myInteger divided by the original value of myDouble to two decimal places (not rounded), true, and "Second output".
 
-In the third section, modify the same variables to: the biggest integer value in java, the biggest double value in java, false, and Section 1 string variable + Section 2 string variable. How do you find the biggest integer and double value? How do you do string addition?
+In the third section, modify the same variables to: the biggest integer value in Java, the biggest double value in Java, false, and Section 1 string variable + Section 2 string variable. How do you find the biggest integer and double value? How do you do string addition?
 
 ## How to check your work?
 
@@ -43,16 +43,17 @@ In your terminal run the following command to see what your output is:
 java VariablePractice.java
 ```
 
-You can use this to double check your println statements. If you want to compare your program with answer.txt, you can do that by running the following commands:
+You can use this to double-check your println statements. If you want to compare your program with answer.txt, you can do that by running the following commands:
 
 ```bash
 java VariablePractice.java > output.txt
 java VariablePracticeTester.java
 ```
 
-If the output is: "Files are identical.", then you have completed the asssignment. If there is a mistake in your program, then it will tell you which line number the program found the mistake at.
-This ONLY works if you haven't modify the code in PrintPracticeTester.java or changed the answers in answers.txt
+If the output is: "Files are identical.", then you have completed the assignment. If there is a mistake in your program, then it will tell you which line number the program found the mistake at. This ONLY works if you haven't modified the code in PrintPracticeTester.java or changed the answers in answers.txt
+
 
 ## Think you found a bug or a typo?
 
 Please send me an email explaining where you believe you have found either a typo or a bug in the program. You can email me at daniel.tutors12@gmail.com. Try your best to explain the bug/typo to me and provide screenshots of the code/output if you can.
+
