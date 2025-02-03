@@ -1,0 +1,6 @@
+X-coordinate of the apple: 23.4 meters
+Y-coordinate of the apple: 4.516 meters
+X-coordinate of the bullet: 10.81828089828999 meters
+Y-coordinate of the bullet: 2.4728148467308526 meters
+Theta: 0.16098781377080748 radians
+Time of contact: 0.8652021599364743 seconds
