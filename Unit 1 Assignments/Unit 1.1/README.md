@@ -2,18 +2,18 @@
 
 ## Introduction
 
-This assignment is suppose to give you some hands-on practice using printlns in Java. Before starting this assignment you should be familiar with the following topics:
-- Creating a class in Java 
-- Main method in Java 
+This assignment is supposed to give you some hands-on practice using printlns in Java. Before starting this assignment you should be familiar with the following topics:
+- Creating a class in Java
+- Main method in Java
 - System.out.printlns
 - Comments
 - Understanding the basic syntax
 
-One of my expectations that I have is that you will look up information that you don't know yet. For example, we haven't talked about escape sequences, yet this assignment has you using them. This was done on purpose. Take the time to do your own research on them and do some experimenting.
+One of my expectations that I have is that you will look up information that you don't know yet. For example, we haven't talked about escape sequences, yet this assignment has you using them. This was done on purpose. Take the time to do your research on them and experiment with them.
 
-**Be very caution to use AI. It is a powerful tool, but it can lead to blindly copying and pasting directly into code. I ask that if you use AI, to prompt it with questions, not commands.**
+**Be very cautious about using AI. It is a powerful tool, but it can lead to blindly copying and pasting directly into code. I ask that if you use AI, prompt it with questions, not commands.**
 
-## Install instructions
+## Install Instructions
 
 TODO: Write the instructions to install this folder
 
@@ -26,7 +26,7 @@ Open the PrintPractice.java file and read through the comments. This is where al
 System.out.println("Hello World")
 ```
 
-Here we can see that comment wants us to print out "Hello World" (without the double quotes). If you are ever confused on what exactly you should be printing, I have given you a file named answer.txt. You may look at the file, but DO NOT modify this. This file is the exact output you should be getting after all the printlns in your program. The goal of the assignment is to get your println statements to match exactly what answer.txt holds.
+Here we can see that the comment wants us to print out "Hello World" (without the double quotes). If you are ever confused about what exactly you should be printing, I have given you a file named answer.txt. You may look at the file but DO NOT modify this. This file is the exact output you should be getting after all the printlns in your program. The goal of the assignment is to get your println statements to match exactly what answer.txt holds.
 
 ## How to check your work?
 
@@ -36,15 +36,15 @@ In your terminal run the following command to see what your output is:
 java PrintPractice.java
 ```
 
-You can use this to double check your println statements with the comments that I have provided. If you want to compare your program with answer.txt, you can do that by running the following commands:
+You can use this to double-check your println statements with the comments that I have provided. If you want to compare your program with answer.txt, you can do that by running the following commands:
 
 ```bash
 java PrintPractice.java > output.txt
 java PrintPracticeTester.java
 ```
 
-If the output is: "Files are identical.", then you have completed the asssignment. If there is a mistake in your program, then it will tell you which line number the program found the mistake at.
-This ONLY works if you haven't modify the code in PrintPracticeTester.java or changed the answers in answers.txt
+If the output is: "Files are identical.", then you have completed the assignment. If there is a mistake in your program, then it will tell you which line number the program found the mistake at. This ONLY works if you haven't modified the code in PrintPracticeTester.java or changed the answers in answers.txt
+
 
 ## Think you found a bug or a typo?
 
