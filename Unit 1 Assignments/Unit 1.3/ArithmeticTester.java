@@ -2,7 +2,7 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
-public class VariablePracticeTester {
+public class ArithmeticTester {
     public static void compareFiles(String file1, String file2) {
         try (Scanner scanner1 = new Scanner(new File(file1));
              Scanner scanner2 = new Scanner(new File(file2))) {
