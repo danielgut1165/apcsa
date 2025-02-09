@@ -104,6 +104,8 @@ public class FixTester {
         assert lines[38].trim().equals("int maximum_value = Integer.MAX_VALUE;") : "Line 39: int maximum_value = Integer.MAX_VALUE;";
         assert checkLength(lines[39].trim()) == 36 : "Line 40: Use either Prefix or Postfix";
         assert checkLength(lines[40].trim()) == 36 : "Line 41: Use either Prefix or Postfix";
+        assert lines[39].contains("minimum_value") : "Line 40: Only minimum_value variable can be used";
+        assert lines[40].contains("maximum_value") : "Line 41: Only maximum_value variable can be used";
         assert Integer.parseInt(answers[18]) == Integer.MAX_VALUE : "Answer from Section 3 is incorrect";
         assert Integer.parseInt(answers[19]) == Integer.MIN_VALUE : "Answer from Section 3 is incorrect";
 
