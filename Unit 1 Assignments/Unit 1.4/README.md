@@ -21,7 +21,7 @@ TODO: Write the instructions to install this folder
 
 Open the FixPractice.java file and read through the comments. This is where all your code will go. DO NOT MODIFY FixTester.java. Here is where you will find the three sections that you will be working on. Let's describe the three sections. You may NOT add/remove lines. The FixPractice.java should remain 43 lines long. This prevents you from accidentally modifying variables to pass the assignment.
 
-Section 1: Prefix Operator, Postfix Operator, and the Compound Operators. In this section, you may only edit the lines indicated with comments. The goal of this assignment to to get the following output by only using ONE prefix, postfix, and compound operator per line.
+Section 1: Prefix Operator, Postfix Operator, and the Compound Operators. In this section, you may only edit the lines indicated with comments. The goal of this assignment to get the following output by only using ONE prefix, postfix, and compound operator per line.
 ```java
 int var = 5;
 System.out.println(var);        // Edit this line
