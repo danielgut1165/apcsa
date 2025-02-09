@@ -37,9 +37,11 @@ public class FixTester {
         String[] answers = parseLines("output.txt");
         if (lines.length == 0) {
             System.out.println("Run: cat FixPractice.java > code.txt");
+            return;
         }
         if (answers.length == 0) {
             System.out.println("Run: java FixPractice.java > output.txt");
+            return;
         }
 
         // Checking for no more additonal lines of code
