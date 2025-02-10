@@ -82,6 +82,13 @@ public class Maze {
         lines[myY] = lines[myY].substring(0, myX) + "@" + lines[myY].substring(myX + 1);
     }
 
+    /**
+     * Prints out the maze with your current position
+     * 
+     * @param none
+     *
+     * @return none
+     */
     public void print() {
         if (lines == null) {
             System.out.println("Maze has not been initialized");
