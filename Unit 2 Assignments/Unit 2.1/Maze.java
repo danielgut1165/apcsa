@@ -13,6 +13,16 @@ public class Maze {
     private int myY;
     private String[] lines;
 
+    /**
+     * Constructor: creates the maze object
+     * 
+     * @param width  - The width of the maze.
+     * @param height - The height of the maze.
+     * @param x_pos  - The X-coordinate position of your character.
+     * @param y_pos  - The Y-coordinate position of your character.
+     *
+     * @return none
+     */
     public Maze(int width, int height, int x_pos, int y_pos) {
         myWidth = width;
         myHeight = height;
@@ -28,14 +38,35 @@ public class Maze {
         }
     }
 
+    /**
+     * Turns your character to the right
+     * 
+     * @param none
+     *
+     * @return none
+     */
     public void turnRight() {
         myDirection = (myDirection + 1) % 4;
     }
  
+    /**
+     * Turns your character to the left
+     * 
+     * @param none
+     *
+     * @return none
+     */
     public void turnLeft() {
         myDirection = (myDirection - 1 + 4) % 4;
     }
 
+    /**
+     * Moves your character forward 1 space
+     * 
+     * @param none
+     *
+     * @return none
+     */
     public void moveForward() {
         lines[myY] = lines[myY].replace('@', ' ');
 
