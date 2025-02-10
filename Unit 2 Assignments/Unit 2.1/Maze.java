@@ -11,6 +11,7 @@ public class Maze {
     private int myDirection; // 0 - North, 1 - East, 2 - South, 3 - West
     private int myX;
     private int myY;
+    private String[] lines;
 
     public Maze(int width, int height, int x_pos, int y_pos) {
         myWidth = width;
@@ -18,6 +19,13 @@ public class Maze {
         myDirection = 0;
         myX = x_pos;
         myY = y_pos;
+
+        // Getting the starting position of the maze
+        try {
+            lines = Files.readAllLines(Paths.get("Maze.txt")).toArray(new String[0]);    
+        } catch (IOException e) {
+            System.out.println("Path to Maze.txt is incorrect");
+        }
     }
 
     public void turnRight() {
@@ -29,12 +37,6 @@ public class Maze {
     }
 
     public void moveForward() {
-        String[] lines = null;
-        try {
-            lines = Files.readAllLines(Paths.get("Maze.txt")).toArray(new String[0]);    
-        } catch (IOException e) {
-            System.out.println("Path to Maze.txt is incorrect");
-        }
         lines[myY] = lines[myY].replace('@', ' ');
 
         if (myDirection == 0 && checkValidLocation(myX, myY - 1)) {
@@ -45,41 +47,37 @@ public class Maze {
             myY++;
         } else if (myDirection == 3 && checkValidLocation(myX - 1, myY)) {
             myX--;
-        } else {
-            System.out.println("Invalid Direction/Position");
-            return;
         }
         lines[myY] = lines[myY].substring(0, myX) + "@" + lines[myY].substring(myX + 1);
-
-        try {
-            Files.write(Paths.get("Maze.txt"), Arrays.asList(lines), StandardCharsets.UTF_8);
-        } catch (IOException e) {
-            System.out.println("Error writing to Maze.txt: " + e.getMessage());
-        }
     }
 
     public void print() {
-        String[] lines = null;
-        try {
-            lines = Files.readAllLines(Paths.get("Maze.txt")).toArray(new String[0]);    
-        } catch (IOException e) {
-            System.out.println("Path to Maze.txt is incorrect");
-            // e.printStackTrace();
+        if (lines == null) {
+            System.out.println("Maze has not been initialized");
         }
         for (String line : lines) {
             System.out.println(line);
         }
     }
 
-    private static boolean checkValidLocation(int x_pos, int y_pos) {
-        String[] lines = null;
-        try {
-            lines = Files.readAllLines(Paths.get("Maze.txt")).toArray(new String[0]);    
-        } catch (IOException e) {
-            System.out.println("Path to Maze.txt is incorrect");
-            // e.printStackTrace();
+    private boolean checkValidLocation(int x_pos, int y_pos) {
+        if (x_pos < 0 || x_pos >= myWidth) {
+            System.out.println("Out of Bounds!");
+            return false;
         }
-        return lines[y_pos].charAt(x_pos) != 'X';
+        else if (y_pos < 0 || y_pos >= myHeight) {
+            System.out.println("Out of Bounds!");
+            return false;
+        }
+        else if (lines[y_pos].charAt(x_pos) == 'X') {
+            System.out.println("Hit a wall!");
+            return false;
+        }
+        else if (lines[y_pos].charAt(x_pos) == 'E') {
+            System.out.println("Finished the Maze!");
+            return true;
+        }
+        return true;
     }
 
     private int getDirection() {
