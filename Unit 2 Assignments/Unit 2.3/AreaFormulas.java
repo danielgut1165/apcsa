@@ -3,6 +3,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a square
+     * @name SquareCalculation
      *
      * @param side - One of the side lengths of the square
      * 
@@ -13,6 +14,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a rectangle
+     * @name RectangleCalculation
      *
      * @param width - the width of the rectangle
      * @param height - the height of the rectangle
@@ -24,6 +26,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a circle
+     * @name CircleCalculation
      *
      * @param radius - the radius of the circle
      * 
@@ -34,6 +37,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a triangle
+     * @name TriangleCalculation
      *
      * @param base - the base of the triangle
      * @param height - the height of the triangle
@@ -45,6 +49,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a trapezoid
+     * @name TrapezoidCalculation
      *
      * @param parallel_side_1 - the bottom parallel side of the trapezoid
      * @param parallel_side_2 - the top parallel side of the trapezoid
@@ -57,6 +62,7 @@ public class AreaFormulas {
 
     /*
      * Calculates the area of a ellipse
+     * @name EllipseCalculation
      *
      * @param semi_axis_1 - the major axis of the ellipse
      * @param semi_axis_2 - the minor axis of the ellipse
