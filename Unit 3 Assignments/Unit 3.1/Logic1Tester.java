@@ -265,5 +265,7 @@ public class Logic1Tester {
             System.out.println("Correct implementation of sameEnds");
         }
 
+        System.out.println("Code looks good!");
+
     }
 }
