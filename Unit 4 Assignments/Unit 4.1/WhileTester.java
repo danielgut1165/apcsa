@@ -1,6 +1,6 @@
 public class WhileTester {
     public static void main(String[] args) {
-        WhileAnswer loopMethods = new WhileAnswer();
+        While loopMethods = new While();
 
         // TEST CASES: nCopies
         if (!loopMethods.nCopies("Hi", 2).equals("HiHi")) {
